@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Audio / Video</title>
-	<link rel="stylesheet" href="./reset.css">
-	<link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
-	<script src="./script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio / Video</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <audio class="audio" src="./assets/music.mp3"></audio>
+    <div class="progressBar">
+      <div class="orangeBar"></div>
+    </div>
+    <div class="controller">
+      <img
+        class="previous"
+        id="btn"
+        src="./assets/previous.png"
+        alt="play bouton"
+      />
+      <img class="play" id="btn" src="./assets/play.png" alt="play bouton" />
+      <img class="pause" id="btn" src="./assets/pause.png" alt="play bouton" />
+      <img class="next" id="btn" src="./assets/next.png" alt="play bouton" />
+      <button class="muted">Mute</button>
+      <input
+        type="range"
+        class="volume"
+        min="0"
+        max="100"
+        value="50"
+        step="1"
+      />
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
