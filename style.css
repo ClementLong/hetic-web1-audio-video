@@ -11,7 +11,13 @@
   align-items: center;
 }
 
-.play {
+#btn {
+  width: 5%;
+  height: auto;
+  margin-left: 2%;
+}
+
+.muted {
   width: 100px;
   height: 50px;
 }
