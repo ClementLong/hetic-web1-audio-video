@@ -21,3 +21,17 @@
   width: 100px;
   height: 50px;
 }
+
+.progressBar {
+  height: 10px;
+  width: 100vw;
+  background-color: black;
+  cursor: pointer;
+}
+
+.orangeBar {
+  height: 10px;
+  width: 100vw;
+  background-color: orangered;
+  cursor: pointer;
+}
