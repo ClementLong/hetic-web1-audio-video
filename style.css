@@ -1,0 +1,28 @@
+.video {
+	width: 100%;
+	height: 100vh;
+	display: flex; /* Permet d'enlever les white-spaces */
+}
+
+.controller {
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%); /* Permet d'aligner sur le centre */
+}
+
+.progress {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10px;
+	background: salmon;
+}
+
+.bar {
+	height: 10px;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: left;
+	background: royalblue;
+}
