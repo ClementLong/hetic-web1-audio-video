@@ -36,5 +36,3 @@ audio.addEventListener("timeupdate", () => {
     progres.style.width = 0;
   }
 });
-
-bar.addEventListener("click", () => {});
