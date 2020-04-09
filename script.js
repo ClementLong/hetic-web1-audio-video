@@ -1,38 +1,37 @@
-const audio = document.querySelector(".audio");
+const video = document.querySelector(".video");
 const play = document.querySelector(".play");
 const muted = document.querySelector(".muted");
 const volume = document.querySelector(".volume");
 const bar = document.querySelector(".progressBar");
 const progress = document.querySelector(".orangeBar");
 
-play.addEventListener("click", () => {
-  if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-});
+played = () => {
+  const toggleplay = video.paused ? "play" : "pause";
+  video[toggleplay]();
+};
 
-muted.addEventListener("click", () => {
-  if (audio.muted) {
-    audio.muted = false;
-    muted.innerHTML = "Mute";
-  } else {
-    audio.muted = true;
-    muted.innerHTML = "Unmute";
-  }
-});
+play.addEventListener("click", played);
 
-volume.addEventListener("change", () => {
-  audio.volume = volume.value / 100;
-});
+// muted.addEventListener("click", () => {
+//   if (audio.muted) {
+//     audio.muted = false;
+//     muted.innerHTML = "Mute";
+//   } else {
+//     audio.muted = true;
+//     muted.innerHTML = "Unmute";
+//   }
+// });
 
-audio.addEventListener("timeupdate", () => {
-  let barpos = audio.currentTime / audio.duration;
+// volume.addEventListener("change", () => {
+//   audio.volume = volume.value / 100;
+// });
 
-  progress.style.width = barpos * 100 + "vw";
+// audio.addEventListener("timeupdate", () => {
+//   let barpos = audio.currentTime / audio.duration;
 
-  if (audio.ended) {
-    progres.style.width = 0;
-  }
-});
+//   progress.style.width = barpos * 100 + "vw";
+
+//   if (audio.ended) {
+//     progres.style.width = 0;
+//   }
+// });
